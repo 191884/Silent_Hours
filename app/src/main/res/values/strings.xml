@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Silent_Hours</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Time">%1$s:%2$s</string>
+
+</resources>
