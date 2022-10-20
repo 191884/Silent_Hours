@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.yo.silent_hours.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -27,14 +28,23 @@ public final class ItemRowBinding implements ViewBinding {
   public final CardView card;
 
   @NonNull
+  public final SwitchMaterial pauseSwitch;
+
+  @NonNull
   public final RelativeLayout profileCard;
 
+  @NonNull
+  public final TextView timeStamp;
+
   private ItemRowBinding(@NonNull CardView rootView, @NonNull TextView ProfileName,
-      @NonNull CardView card, @NonNull RelativeLayout profileCard) {
+      @NonNull CardView card, @NonNull SwitchMaterial pauseSwitch,
+      @NonNull RelativeLayout profileCard, @NonNull TextView timeStamp) {
     this.rootView = rootView;
     this.ProfileName = ProfileName;
     this.card = card;
+    this.pauseSwitch = pauseSwitch;
     this.profileCard = profileCard;
+    this.timeStamp = timeStamp;
   }
 
   @Override
@@ -72,13 +82,26 @@ public final class ItemRowBinding implements ViewBinding {
 
       CardView card = (CardView) rootView;
 
+      id = R.id.pauseSwitch;
+      SwitchMaterial pauseSwitch = ViewBindings.findChildViewById(rootView, id);
+      if (pauseSwitch == null) {
+        break missingId;
+      }
+
       id = R.id.profile_card;
       RelativeLayout profileCard = ViewBindings.findChildViewById(rootView, id);
       if (profileCard == null) {
         break missingId;
       }
 
-      return new ItemRowBinding((CardView) rootView, ProfileName, card, profileCard);
+      id = R.id.timeStamp;
+      TextView timeStamp = ViewBindings.findChildViewById(rootView, id);
+      if (timeStamp == null) {
+        break missingId;
+      }
+
+      return new ItemRowBinding((CardView) rootView, ProfileName, card, pauseSwitch, profileCard,
+          timeStamp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
