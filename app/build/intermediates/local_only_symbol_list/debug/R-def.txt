@@ -64,7 +64,6 @@ id toDoCustomTextInput
 id toolBar
 id vibSwitch
 layout activity_main
-layout activity_new_profile
 layout fragment_details
 layout fragment_main
 layout fragment_new_profile
