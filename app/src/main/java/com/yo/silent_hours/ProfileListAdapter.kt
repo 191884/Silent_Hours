@@ -42,15 +42,15 @@ class ProfileListAdapter: ListAdapter<Profile, ProfileListAdapter.ViewHolder>(PR
 
     }
 
-companion object {
-    private val PROFILE_COMPARATOR = object : DiffUtil.ItemCallback<Profile>() {
-        override fun areItemsTheSame(oldItem: Profile, newItem: Profile): Boolean {
-            return oldItem == newItem
-        }
+    companion object {
+        private val PROFILE_COMPARATOR = object : DiffUtil.ItemCallback<Profile>() {
+            override fun areItemsTheSame(oldItem: Profile, newItem: Profile): Boolean {
+                return oldItem == newItem
+            }
 
-        override fun areContentsTheSame(oldItem: Profile, newItem: Profile): Boolean {
-            return oldItem.name == newItem.name
+            override fun areContentsTheSame(oldItem: Profile, newItem: Profile): Boolean {
+                return oldItem.name == newItem.name
+            }
         }
     }
-}
 }

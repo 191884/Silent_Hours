@@ -20,11 +20,11 @@
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/layout/activity_new_profile.xml"
     },
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-48:/layout/activity_main.xml",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/layout/activity_main.xml"
-    },
-    {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-48:/layout/fragment_new_profile.xml",
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/layout/fragment_new_profile.xml"
+    },
+    {
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-48:/layout/activity_main.xml",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/layout/activity_main.xml"
     }
 ]

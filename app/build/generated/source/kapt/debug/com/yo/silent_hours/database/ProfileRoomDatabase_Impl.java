@@ -37,9 +37,9 @@ public final class ProfileRoomDatabase_Impl extends ProfileRoomDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `profile_table` (`profileId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `profile_table` (`profileId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `timeInstance` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '06d866d34b83d5796bc552b9276117a7')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '286220a6e18e41c5710139500a6643e2')");
       }
 
       @Override
@@ -83,9 +83,10 @@ public final class ProfileRoomDatabase_Impl extends ProfileRoomDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsProfileTable = new HashMap<String, TableInfo.Column>(2);
+        final HashMap<String, TableInfo.Column> _columnsProfileTable = new HashMap<String, TableInfo.Column>(3);
         _columnsProfileTable.put("profileId", new TableInfo.Column("profileId", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProfileTable.put("name", new TableInfo.Column("name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsProfileTable.put("timeInstance", new TableInfo.Column("timeInstance", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysProfileTable = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesProfileTable = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoProfileTable = new TableInfo("profile_table", _columnsProfileTable, _foreignKeysProfileTable, _indicesProfileTable);
@@ -97,7 +98,7 @@ public final class ProfileRoomDatabase_Impl extends ProfileRoomDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "06d866d34b83d5796bc552b9276117a7", "466a27a30c73e4f4affdb2e2b9af6dda");
+    }, "286220a6e18e41c5710139500a6643e2", "bf6968000a40ecf5e94159aef3ad855f");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

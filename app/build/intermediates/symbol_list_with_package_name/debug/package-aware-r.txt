@@ -2573,6 +2573,7 @@ id EndTime
 id FUNCTION
 id META
 id NO_DEBUG
+id NameInput
 id ProfileName
 id SHIFT
 id SHOW_ALL
@@ -2896,6 +2897,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id myNavHostFragment
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
@@ -3081,7 +3083,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id userToDoEditText
 id vertical_only
 id vibSwitch
 id view_offset_helper

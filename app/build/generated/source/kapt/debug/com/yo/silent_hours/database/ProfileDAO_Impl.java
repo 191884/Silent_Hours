@@ -38,7 +38,7 @@ public final class ProfileDAO_Impl implements ProfileDAO {
     this.__insertionAdapterOfProfile = new EntityInsertionAdapter<Profile>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR IGNORE INTO `profile_table` (`profileId`,`name`) VALUES (nullif(?, 0),?)";
+        return "INSERT OR IGNORE INTO `profile_table` (`profileId`,`name`,`timeInstance`) VALUES (nullif(?, 0),?,?)";
       }
 
       @Override
@@ -48,6 +48,11 @@ public final class ProfileDAO_Impl implements ProfileDAO {
           stmt.bindNull(2);
         } else {
           stmt.bindString(2, value.getName());
+        }
+        if (value.getTimeInstance() == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.getTimeInstance());
         }
       }
     };
@@ -65,7 +70,7 @@ public final class ProfileDAO_Impl implements ProfileDAO {
     this.__updateAdapterOfProfile = new EntityDeletionOrUpdateAdapter<Profile>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `profile_table` SET `profileId` = ?,`name` = ? WHERE `profileId` = ?";
+        return "UPDATE OR ABORT `profile_table` SET `profileId` = ?,`name` = ?,`timeInstance` = ? WHERE `profileId` = ?";
       }
 
       @Override
@@ -76,7 +81,12 @@ public final class ProfileDAO_Impl implements ProfileDAO {
         } else {
           stmt.bindString(2, value.getName());
         }
-        stmt.bindLong(3, value.getProfileId());
+        if (value.getTimeInstance() == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.getTimeInstance());
+        }
+        stmt.bindLong(4, value.getProfileId());
       }
     };
   }
@@ -146,6 +156,7 @@ public final class ProfileDAO_Impl implements ProfileDAO {
         try {
           final int _cursorIndexOfProfileId = CursorUtil.getColumnIndexOrThrow(_cursor, "profileId");
           final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+          final int _cursorIndexOfTimeInstance = CursorUtil.getColumnIndexOrThrow(_cursor, "timeInstance");
           final List<Profile> _result = new ArrayList<Profile>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final Profile _item;
@@ -157,7 +168,13 @@ public final class ProfileDAO_Impl implements ProfileDAO {
             } else {
               _tmpName = _cursor.getString(_cursorIndexOfName);
             }
-            _item = new Profile(_tmpProfileId,_tmpName);
+            final String _tmpTimeInstance;
+            if (_cursor.isNull(_cursorIndexOfTimeInstance)) {
+              _tmpTimeInstance = null;
+            } else {
+              _tmpTimeInstance = _cursor.getString(_cursorIndexOfTimeInstance);
+            }
+            _item = new Profile(_tmpProfileId,_tmpName,_tmpTimeInstance);
             _result.add(_item);
           }
           return _result;

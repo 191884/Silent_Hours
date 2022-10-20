@@ -16,6 +16,7 @@ drawable ic_repeat
 drawable mute
 drawable vibration
 id EndTime
+id NameInput
 id ProfileName
 id StartTime
 id action_delete
@@ -46,6 +47,7 @@ id end_txt
 id linearLayout
 id mainFragment
 id makeProfileFab
+id myNavHostFragment
 id nav_graph
 id newProfileFragment
 id pauseSwitch
@@ -60,7 +62,6 @@ id timeLayout
 id timeStamp
 id toDoCustomTextInput
 id toolBar
-id userToDoEditText
 id vibSwitch
 layout activity_main
 layout activity_new_profile

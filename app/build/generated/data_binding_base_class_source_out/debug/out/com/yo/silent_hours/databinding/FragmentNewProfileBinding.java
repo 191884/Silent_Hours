@@ -31,6 +31,9 @@ public final class FragmentNewProfileBinding implements ViewBinding {
   public final EditText EndTime;
 
   @NonNull
+  public final TextInputEditText NameInput;
+
+  @NonNull
   public final TextInputEditText StartTime;
 
   @NonNull
@@ -76,21 +79,19 @@ public final class FragmentNewProfileBinding implements ViewBinding {
   public final Toolbar toolBar;
 
   @NonNull
-  public final TextInputEditText userToDoEditText;
-
-  @NonNull
   public final SwitchMaterial vibSwitch;
 
   private FragmentNewProfileBinding(@NonNull ScrollView rootView, @NonNull EditText EndTime,
-      @NonNull TextInputEditText StartTime, @NonNull Chip chip1, @NonNull Chip chip2,
-      @NonNull Chip chip3, @NonNull Chip chip4, @NonNull Chip chip5, @NonNull Chip chip6,
-      @NonNull Chip chip7, @NonNull ChipGroup chipGroup, @NonNull LinearLayout dayLayout,
-      @NonNull Button makeProfileFab, @NonNull SwitchMaterial repeatWeeklySwitch,
-      @NonNull LinearLayout timeLayout, @NonNull TextInputLayout toDoCustomTextInput,
-      @NonNull Toolbar toolBar, @NonNull TextInputEditText userToDoEditText,
+      @NonNull TextInputEditText NameInput, @NonNull TextInputEditText StartTime,
+      @NonNull Chip chip1, @NonNull Chip chip2, @NonNull Chip chip3, @NonNull Chip chip4,
+      @NonNull Chip chip5, @NonNull Chip chip6, @NonNull Chip chip7, @NonNull ChipGroup chipGroup,
+      @NonNull LinearLayout dayLayout, @NonNull Button makeProfileFab,
+      @NonNull SwitchMaterial repeatWeeklySwitch, @NonNull LinearLayout timeLayout,
+      @NonNull TextInputLayout toDoCustomTextInput, @NonNull Toolbar toolBar,
       @NonNull SwitchMaterial vibSwitch) {
     this.rootView = rootView;
     this.EndTime = EndTime;
+    this.NameInput = NameInput;
     this.StartTime = StartTime;
     this.chip1 = chip1;
     this.chip2 = chip2;
@@ -106,7 +107,6 @@ public final class FragmentNewProfileBinding implements ViewBinding {
     this.timeLayout = timeLayout;
     this.toDoCustomTextInput = toDoCustomTextInput;
     this.toolBar = toolBar;
-    this.userToDoEditText = userToDoEditText;
     this.vibSwitch = vibSwitch;
   }
 
@@ -140,6 +140,12 @@ public final class FragmentNewProfileBinding implements ViewBinding {
       id = R.id.EndTime;
       EditText EndTime = ViewBindings.findChildViewById(rootView, id);
       if (EndTime == null) {
+        break missingId;
+      }
+
+      id = R.id.NameInput;
+      TextInputEditText NameInput = ViewBindings.findChildViewById(rootView, id);
+      if (NameInput == null) {
         break missingId;
       }
 
@@ -233,22 +239,15 @@ public final class FragmentNewProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.userToDoEditText;
-      TextInputEditText userToDoEditText = ViewBindings.findChildViewById(rootView, id);
-      if (userToDoEditText == null) {
-        break missingId;
-      }
-
       id = R.id.vibSwitch;
       SwitchMaterial vibSwitch = ViewBindings.findChildViewById(rootView, id);
       if (vibSwitch == null) {
         break missingId;
       }
 
-      return new FragmentNewProfileBinding((ScrollView) rootView, EndTime, StartTime, chip1, chip2,
-          chip3, chip4, chip5, chip6, chip7, chipGroup, dayLayout, makeProfileFab,
-          repeatWeeklySwitch, timeLayout, toDoCustomTextInput, toolBar, userToDoEditText,
-          vibSwitch);
+      return new FragmentNewProfileBinding((ScrollView) rootView, EndTime, NameInput, StartTime,
+          chip1, chip2, chip3, chip4, chip5, chip6, chip7, chipGroup, dayLayout, makeProfileFab,
+          repeatWeeklySwitch, timeLayout, toDoCustomTextInput, toolBar, vibSwitch);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

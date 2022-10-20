@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-49:/drawable-v24_ic_arrow_back.xml.flat",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/drawable-v24/ic_arrow_back.xml"
-    },
-    {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-49:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-49:/drawable-v24_ic_arrow_back.xml.flat",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/drawable-v24/ic_arrow_back.xml"
     },
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-49:/xml_backup_rules.xml.flat",
@@ -20,12 +20,12 @@
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-49:/layout_fragment_new_profile.xml.flat",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/layout/fragment_new_profile.xml"
-    },
-    {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-49:/layout_activity_new_profile.xml.flat",
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/layout/activity_new_profile.xml"
+    },
+    {
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-49:/layout_fragment_new_profile.xml.flat",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/layout/fragment_new_profile.xml"
     },
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-49:/drawable-v24_mute.png.flat",
