@@ -5,10 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.yo.silent_hours.database.Profile
 import com.yo.silent_hours.database.ProfileViewModel
+import com.yo.silent_hours.database.ProfileViewModelFactory
+import com.yo.silent_hours.database.QuiteApplication
 import com.yo.silent_hours.databinding.FragmentNewProfileBinding
 import java.text.SimpleDateFormat
 import java.util.*
@@ -16,7 +19,9 @@ import java.util.*
 class NewProfileFragment() : Fragment() {
 
 //    private val viewModel: ProfileViewModel =ViewModelProvider(this).get(ProfileViewModel::class.java)
-    private val profileViewModel: ProfileViewModel by viewModels()
+    private val viewModel: ProfileViewModel by viewModels {
+        ProfileViewModelFactory((parentFragment as QuiteApplication).repository)
+    }
     private var _binding: FragmentNewProfileBinding? = null
     private val binding
         get() = _binding!!
@@ -31,7 +36,7 @@ class NewProfileFragment() : Fragment() {
 
         val profile = Profile(name = binding.userToDoEditText.text.toString())
         binding.makeProfileFab.setOnClickListener {
-            profileViewModel.insert(profile)
+            viewModel.insert(profile)
 //            validateProfileData(it)
         }
 

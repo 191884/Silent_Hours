@@ -40,22 +40,22 @@
             android:textSize="24sp"
             android:transitionName="profileName" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/timeStamp"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/ProfileName"-->
-<!--            android:layout_marginStart="18dp"-->
-<!--            android:layout_marginTop="2dp"-->
-<!--            android:textSize="12sp" />-->
+        <TextView
+            android:id="@+id/timeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProfileName"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp" />
 
-<!--        <com.google.android.material.switchmaterial.SwitchMaterial-->
-<!--            android:id="@+id/pauseSwitch"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginEnd="10dp"/>-->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/pauseSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
 
     </RelativeLayout>
 

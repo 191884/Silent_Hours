@@ -2791,7 +2791,6 @@ id fixed
 id flip
 id floating
 id forever
-id fragmentContainerView
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -2934,6 +2933,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pauseSwitch
 id peekHeight
 id percent
 id pin
@@ -3058,6 +3058,7 @@ id textinput_prefix_text
 id textinput_suffix_text
 id time
 id timeLayout
+id timeStamp
 id title
 id titleDividerNoCustom
 id title_template
@@ -3194,6 +3195,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_new_profile
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

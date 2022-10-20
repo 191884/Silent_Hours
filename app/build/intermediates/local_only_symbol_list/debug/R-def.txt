@@ -43,12 +43,12 @@ id detailsFragment
 id editButton
 id end
 id end_txt
-id fragmentContainerView
 id linearLayout
 id mainFragment
 id makeProfileFab
 id nav_graph
 id newProfileFragment
+id pauseSwitch
 id profileNote
 id profileTxt
 id profile_card
@@ -57,11 +57,13 @@ id repeatWeeklySwitch
 id rv
 id str
 id timeLayout
+id timeStamp
 id toDoCustomTextInput
 id toolBar
 id userToDoEditText
 id vibSwitch
 layout activity_main
+layout activity_new_profile
 layout fragment_details
 layout fragment_main
 layout fragment_new_profile

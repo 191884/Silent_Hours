@@ -3,6 +3,7 @@ package com.yo.silent_hours.database
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.yo.silent_hours.database.Profile
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ProfileDAO {

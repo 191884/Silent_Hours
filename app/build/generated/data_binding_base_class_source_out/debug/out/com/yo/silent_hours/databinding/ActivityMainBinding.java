@@ -6,10 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentContainerView;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.yo.silent_hours.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,12 +22,20 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FragmentContainerView fragmentContainerView;
+  public final FloatingActionButton addButton;
+
+  @NonNull
+  public final RecyclerView rv;
+
+  @NonNull
+  public final Toolbar toolBar;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FragmentContainerView fragmentContainerView) {
+      @NonNull FloatingActionButton addButton, @NonNull RecyclerView rv, @NonNull Toolbar toolBar) {
     this.rootView = rootView;
-    this.fragmentContainerView = fragmentContainerView;
+    this.addButton = addButton;
+    this.rv = rv;
+    this.toolBar = toolBar;
   }
 
   @Override
@@ -55,13 +65,25 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fragmentContainerView;
-      FragmentContainerView fragmentContainerView = ViewBindings.findChildViewById(rootView, id);
-      if (fragmentContainerView == null) {
+      id = R.id.add_button;
+      FloatingActionButton addButton = ViewBindings.findChildViewById(rootView, id);
+      if (addButton == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, fragmentContainerView);
+      id = R.id.rv;
+      RecyclerView rv = ViewBindings.findChildViewById(rootView, id);
+      if (rv == null) {
+        break missingId;
+      }
+
+      id = R.id.toolBar;
+      Toolbar toolBar = ViewBindings.findChildViewById(rootView, id);
+      if (toolBar == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, addButton, rv, toolBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

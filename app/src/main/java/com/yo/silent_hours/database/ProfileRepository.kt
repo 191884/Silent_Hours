@@ -4,11 +4,13 @@ import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
 import com.yo.silent_hours.database.Profile
 import com.yo.silent_hours.database.ProfileDAO
+import kotlinx.coroutines.flow.Flow
 
 class ProfileRepository(private val profileDAO: ProfileDAO) {
 
     val allProfiles: LiveData<List<Profile>> = profileDAO.getAllProfile()
 
+    @Suppress("RedundantSuspendModifier")
     @WorkerThread
     suspend fun insert(profile: Profile) {
         profileDAO.insertProfile(profile)
