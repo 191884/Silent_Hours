@@ -38,7 +38,7 @@ public final class ProfileDAO_Impl implements ProfileDAO {
     this.__insertionAdapterOfProfile = new EntityInsertionAdapter<Profile>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR IGNORE INTO `profile_table` (`profileId`,`name`,`timeInstance`) VALUES (nullif(?, 0),?,?)";
+        return "INSERT OR IGNORE INTO `profile_table` (`profileId`,`name`,`shr`,`smin`,`ehr`,`emin`,`vibSwitch`,`timeInstance`,`repeatWeekly`,`pauseSwitch`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -49,11 +49,21 @@ public final class ProfileDAO_Impl implements ProfileDAO {
         } else {
           stmt.bindString(2, value.getName());
         }
+        stmt.bindLong(3, value.getShr());
+        stmt.bindLong(4, value.getSmin());
+        stmt.bindLong(5, value.getEhr());
+        stmt.bindLong(6, value.getEmin());
+        final int _tmp = value.getVibSwitch() ? 1 : 0;
+        stmt.bindLong(7, _tmp);
         if (value.getTimeInstance() == null) {
-          stmt.bindNull(3);
+          stmt.bindNull(8);
         } else {
-          stmt.bindString(3, value.getTimeInstance());
+          stmt.bindString(8, value.getTimeInstance());
         }
+        final int _tmp_1 = value.getRepeatWeekly() ? 1 : 0;
+        stmt.bindLong(9, _tmp_1);
+        final int _tmp_2 = value.getPauseSwitch() ? 1 : 0;
+        stmt.bindLong(10, _tmp_2);
       }
     };
     this.__deletionAdapterOfProfile = new EntityDeletionOrUpdateAdapter<Profile>(__db) {
@@ -70,7 +80,7 @@ public final class ProfileDAO_Impl implements ProfileDAO {
     this.__updateAdapterOfProfile = new EntityDeletionOrUpdateAdapter<Profile>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `profile_table` SET `profileId` = ?,`name` = ?,`timeInstance` = ? WHERE `profileId` = ?";
+        return "UPDATE OR ABORT `profile_table` SET `profileId` = ?,`name` = ?,`shr` = ?,`smin` = ?,`ehr` = ?,`emin` = ?,`vibSwitch` = ?,`timeInstance` = ?,`repeatWeekly` = ?,`pauseSwitch` = ? WHERE `profileId` = ?";
       }
 
       @Override
@@ -81,12 +91,22 @@ public final class ProfileDAO_Impl implements ProfileDAO {
         } else {
           stmt.bindString(2, value.getName());
         }
+        stmt.bindLong(3, value.getShr());
+        stmt.bindLong(4, value.getSmin());
+        stmt.bindLong(5, value.getEhr());
+        stmt.bindLong(6, value.getEmin());
+        final int _tmp = value.getVibSwitch() ? 1 : 0;
+        stmt.bindLong(7, _tmp);
         if (value.getTimeInstance() == null) {
-          stmt.bindNull(3);
+          stmt.bindNull(8);
         } else {
-          stmt.bindString(3, value.getTimeInstance());
+          stmt.bindString(8, value.getTimeInstance());
         }
-        stmt.bindLong(4, value.getProfileId());
+        final int _tmp_1 = value.getRepeatWeekly() ? 1 : 0;
+        stmt.bindLong(9, _tmp_1);
+        final int _tmp_2 = value.getPauseSwitch() ? 1 : 0;
+        stmt.bindLong(10, _tmp_2);
+        stmt.bindLong(11, value.getProfileId());
       }
     };
   }
@@ -156,7 +176,14 @@ public final class ProfileDAO_Impl implements ProfileDAO {
         try {
           final int _cursorIndexOfProfileId = CursorUtil.getColumnIndexOrThrow(_cursor, "profileId");
           final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+          final int _cursorIndexOfShr = CursorUtil.getColumnIndexOrThrow(_cursor, "shr");
+          final int _cursorIndexOfSmin = CursorUtil.getColumnIndexOrThrow(_cursor, "smin");
+          final int _cursorIndexOfEhr = CursorUtil.getColumnIndexOrThrow(_cursor, "ehr");
+          final int _cursorIndexOfEmin = CursorUtil.getColumnIndexOrThrow(_cursor, "emin");
+          final int _cursorIndexOfVibSwitch = CursorUtil.getColumnIndexOrThrow(_cursor, "vibSwitch");
           final int _cursorIndexOfTimeInstance = CursorUtil.getColumnIndexOrThrow(_cursor, "timeInstance");
+          final int _cursorIndexOfRepeatWeekly = CursorUtil.getColumnIndexOrThrow(_cursor, "repeatWeekly");
+          final int _cursorIndexOfPauseSwitch = CursorUtil.getColumnIndexOrThrow(_cursor, "pauseSwitch");
           final List<Profile> _result = new ArrayList<Profile>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final Profile _item;
@@ -168,13 +195,33 @@ public final class ProfileDAO_Impl implements ProfileDAO {
             } else {
               _tmpName = _cursor.getString(_cursorIndexOfName);
             }
+            final int _tmpShr;
+            _tmpShr = _cursor.getInt(_cursorIndexOfShr);
+            final int _tmpSmin;
+            _tmpSmin = _cursor.getInt(_cursorIndexOfSmin);
+            final int _tmpEhr;
+            _tmpEhr = _cursor.getInt(_cursorIndexOfEhr);
+            final int _tmpEmin;
+            _tmpEmin = _cursor.getInt(_cursorIndexOfEmin);
+            final boolean _tmpVibSwitch;
+            final int _tmp;
+            _tmp = _cursor.getInt(_cursorIndexOfVibSwitch);
+            _tmpVibSwitch = _tmp != 0;
             final String _tmpTimeInstance;
             if (_cursor.isNull(_cursorIndexOfTimeInstance)) {
               _tmpTimeInstance = null;
             } else {
               _tmpTimeInstance = _cursor.getString(_cursorIndexOfTimeInstance);
             }
-            _item = new Profile(_tmpProfileId,_tmpName,_tmpTimeInstance);
+            final boolean _tmpRepeatWeekly;
+            final int _tmp_1;
+            _tmp_1 = _cursor.getInt(_cursorIndexOfRepeatWeekly);
+            _tmpRepeatWeekly = _tmp_1 != 0;
+            final boolean _tmpPauseSwitch;
+            final int _tmp_2;
+            _tmp_2 = _cursor.getInt(_cursorIndexOfPauseSwitch);
+            _tmpPauseSwitch = _tmp_2 != 0;
+            _item = new Profile(_tmpProfileId,_tmpName,_tmpShr,_tmpSmin,_tmpEhr,_tmpEmin,_tmpVibSwitch,_tmpTimeInstance,_tmpRepeatWeekly,_tmpPauseSwitch);
             _result.add(_item);
           }
           return _result;

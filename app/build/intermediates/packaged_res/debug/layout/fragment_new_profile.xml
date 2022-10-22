@@ -189,12 +189,14 @@
             android:switchPadding="5dp"
             android:text="Repeat Weekly"
             android:textSize="20sp" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="50dp"
             android:layout_below="@id/vibSwitch"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="5dp"
             android:gravity="bottom|center_horizontal">
 
             <Button

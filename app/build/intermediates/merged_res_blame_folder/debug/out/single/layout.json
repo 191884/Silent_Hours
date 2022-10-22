@@ -12,8 +12,8 @@
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-51:/layout/fragment_main.xml"
     },
     {
-        "merged": "com.yo.silent_hours.app-mergeDebugResources-48:/layout/item_row.xml",
-        "source": "com.yo.silent_hours.app-main-51:/layout/item_row.xml"
+        "merged": "com.yo.silent_hours.app-mergeDebugResources-48:/layout/fragment_new_profile.xml",
+        "source": "com.yo.silent_hours.app-main-51:/layout/fragment_new_profile.xml"
     },
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-48:/layout/activity_new_profile.xml",

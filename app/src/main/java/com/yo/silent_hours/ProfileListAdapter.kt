@@ -26,8 +26,10 @@ class ProfileListAdapter: ListAdapter<Profile, ProfileListAdapter.ViewHolder>(PR
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         private val profileName: TextView = itemView.findViewById(  R.id.ProfileName)
+        private val timeStamp : TextView = itemView.findViewById(R.id.timeStamp)
         fun bind(item: Profile){
             profileName.text = item.name
+            timeStamp.text = item.timeInstance
 //            binding.timeStamp.text = item.timeInstance
 //            binding.pauseSwitch.isChecked = item.pauseSwitch
 //            val days: MutableList<Boolean>

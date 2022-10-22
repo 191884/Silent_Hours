@@ -24,6 +24,10 @@ class ProfileViewModel(private val repository: ProfileRepository): ViewModel(){
         repository.update(profile)
     }
 
+//    fun setAlarms(profile: Profile, startHour: Int = profile.shr, startMinute: Int = profile.smin) {
+//        WorkManagerHelper.setAlarms(workManager, profile, startHour, startMinute)
+//    }
+
 }
 
 
