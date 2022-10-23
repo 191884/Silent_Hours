@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-47:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-50:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/9fd743a7e3f1a17577437381382c3eb1/transformed/material-1.6.1/res/values-small-v4/values-small-v4.xml",
+                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/f7e7519425fd68b7406bcb7bc40459fd/transformed/material-1.6.1/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

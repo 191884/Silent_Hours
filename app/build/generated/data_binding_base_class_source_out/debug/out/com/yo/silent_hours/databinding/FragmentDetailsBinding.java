@@ -4,7 +4,6 @@ package com.yo.silent_hours.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -13,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 import com.yo.silent_hours.R;
@@ -58,7 +58,7 @@ public final class FragmentDetailsBinding implements ViewBinding {
   public final ChipGroup dayPicker;
 
   @NonNull
-  public final Button editButton;
+  public final MaterialButton editButton;
 
   @NonNull
   public final TextView end;
@@ -84,7 +84,7 @@ public final class FragmentDetailsBinding implements ViewBinding {
   private FragmentDetailsBinding(@NonNull ScrollView rootView, @NonNull ImageView audioMode,
       @NonNull Chip chip1, @NonNull Chip chip2, @NonNull Chip chip3, @NonNull Chip chip4,
       @NonNull Chip chip5, @NonNull Chip chip6, @NonNull Chip chip7, @NonNull TextView col1,
-      @NonNull TextView col2, @NonNull ChipGroup dayPicker, @NonNull Button editButton,
+      @NonNull TextView col2, @NonNull ChipGroup dayPicker, @NonNull MaterialButton editButton,
       @NonNull TextView end, @NonNull TextView endTxt, @NonNull LinearLayout linearLayout,
       @NonNull TextView profileNote, @NonNull TextView profileTxt,
       @NonNull ImageView repeatWeeklyIcon, @NonNull TextView str) {
@@ -204,7 +204,7 @@ public final class FragmentDetailsBinding implements ViewBinding {
       }
 
       id = R.id.editButton;
-      Button editButton = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton editButton = ViewBindings.findChildViewById(rootView, id);
       if (editButton == null) {
         break missingId;
       }

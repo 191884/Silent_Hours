@@ -545,6 +545,8 @@ attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
 attr graph
+attr graphPackage
+attr graphResName
 attr guidelineUseRtl
 attr haloColor
 attr haloRadius
@@ -798,6 +800,7 @@ attr mock_labelBackgroundColor
 attr mock_labelColor
 attr mock_showDiagonals
 attr mock_showLabel
+attr moduleName
 attr motionDebug
 attr motionDurationLong1
 attr motionDurationLong2
@@ -897,6 +900,7 @@ attr pressedTranslationZ
 attr primaryActivityName
 attr progressBarPadding
 attr progressBarStyle
+attr progressDestination
 attr quantizeMotionInterpolator
 attr quantizeMotionPhase
 attr quantizeMotionSteps
@@ -2742,6 +2746,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id detailsFragment
+id dfn_progress_fragment
 id dialog_button
 id dimensions
 id direct
@@ -2819,6 +2824,7 @@ id image
 id immediateStop
 id included
 id info
+id installation_progress
 id invisible
 id inward
 id italic
@@ -2944,8 +2950,11 @@ id postLayout
 id profileNote
 id profileTxt
 id profile_card
+id progress_action
 id progress_circular
 id progress_horizontal
+id progress_icon
+id progress_title
 id radio
 id ratio
 id rectangles
@@ -3212,6 +3221,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dynamic_feature_install_fragment
 layout fragment_details
 layout fragment_main
 layout fragment_new_profile
@@ -3295,6 +3305,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 plurals mtrl_badge_content_description
+raw keep
 string Time
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -3340,6 +3351,9 @@ string fab_transformation_sheet_behavior
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string installation_cancelled
+string installation_failed
+string installing_module
 string item_view_role_description
 string label
 string m3_ref_typeface_brand_medium
@@ -3415,11 +3429,14 @@ string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string ok
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string progress
+string retry
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
@@ -4027,6 +4044,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_PlayCore_Transparent
 style Theme_Silent_Hours
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
@@ -4529,6 +4547,10 @@ styleable CustomAttribute attributeName customBoolean customColorDrawableValue c
 styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable DrawerLayout elevation
+styleable DynamicActivityNavigator moduleName
+styleable DynamicFragmentNavigator moduleName
+styleable DynamicGraphNavigator moduleName progressDestination
+styleable DynamicIncludeGraphNavigator graphPackage graphResName moduleName
 styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding

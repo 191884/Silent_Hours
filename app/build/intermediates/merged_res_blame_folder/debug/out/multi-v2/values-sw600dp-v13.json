@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-47:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-50:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/9fd743a7e3f1a17577437381382c3eb1/transformed/material-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/f7e7519425fd68b7406bcb7bc40459fd/transformed/material-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/35247393b79a5fe3c4f500e2adf3d76f/transformed/appcompat-1.5.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/5fe266a8a11bedbce13797039ef264bb/transformed/appcompat-1.5.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

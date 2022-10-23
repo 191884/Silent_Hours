@@ -8,7 +8,7 @@ import kotlinx.parcelize.Parcelize
 //@Entity(tableName = "profile_table")
 //data class Profile(@PrimaryKey @ColumnInfo(name = "ProfileName") val name: String)
 //data class Profile(@PrimaryKey(autoGenerate = true) val name: String)
-
+@Parcelize
 @Entity(tableName = "profile_table")
 data class Profile(
     @PrimaryKey(autoGenerate = true) var profileId: Long = 0L,
@@ -24,4 +24,4 @@ data class Profile(
     var repeatWeekly: Boolean,
     var pauseSwitch: Boolean,
 //    var notes: String
-)
+) : Parcelable
