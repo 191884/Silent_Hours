@@ -25,15 +25,20 @@ public final class FragmentMainBinding implements ViewBinding {
   public final FloatingActionButton addButton;
 
   @NonNull
+  public final ConstraintLayout coordLayout;
+
+  @NonNull
   public final RecyclerView rv;
 
   @NonNull
   public final Toolbar toolBar;
 
   private FragmentMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton addButton, @NonNull RecyclerView rv, @NonNull Toolbar toolBar) {
+      @NonNull FloatingActionButton addButton, @NonNull ConstraintLayout coordLayout,
+      @NonNull RecyclerView rv, @NonNull Toolbar toolBar) {
     this.rootView = rootView;
     this.addButton = addButton;
+    this.coordLayout = coordLayout;
     this.rv = rv;
     this.toolBar = toolBar;
   }
@@ -71,6 +76,8 @@ public final class FragmentMainBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout coordLayout = (ConstraintLayout) rootView;
+
       id = R.id.rv;
       RecyclerView rv = ViewBindings.findChildViewById(rootView, id);
       if (rv == null) {
@@ -83,7 +90,8 @@ public final class FragmentMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentMainBinding((ConstraintLayout) rootView, addButton, rv, toolBar);
+      return new FragmentMainBinding((ConstraintLayout) rootView, addButton, coordLayout, rv,
+          toolBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

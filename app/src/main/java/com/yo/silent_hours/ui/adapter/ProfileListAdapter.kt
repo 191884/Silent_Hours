@@ -42,6 +42,7 @@ class ProfileListAdapter(private val adapterCallback: AdapterCallback
         fun bind(item: Profile, adapterCallback: AdapterCallback){
             profileName.text = item.name
             timeStamp.text = item.timeInstance
+            pauseSwitch.isChecked = item.pauseSwitch
 
             profileCard.setOnClickListener {
                 adapterCallback.openProfileDetails(item)

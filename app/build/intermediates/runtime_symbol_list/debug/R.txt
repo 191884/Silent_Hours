@@ -2492,6 +2492,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070052
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070053
 int drawable abc_textfield_search_material 0x7f070054
 int drawable abc_vector_test 0x7f070055
+int drawable avd_bin_open_close_black_24dp 0x7f0700a4
 int drawable avd_hide_password 0x7f070056
 int drawable avd_show_password 0x7f070057
 int drawable btn_checkbox_checked_mtrl 0x7f070058
@@ -2723,6 +2724,7 @@ int id content 0x7f080097
 int id contentPanel 0x7f080098
 int id contiguous 0x7f080099
 int id continuousVelocity 0x7f08009a
+int id coord_Layout 0x7f08021e
 int id coordinator 0x7f08009b
 int id cos 0x7f08009c
 int id counterclockwise 0x7f08009d

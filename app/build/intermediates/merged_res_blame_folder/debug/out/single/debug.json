@@ -28,12 +28,16 @@
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/layout/activity_main.xml"
     },
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-52:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.yo.silent_hours.app-merged_res-52:/drawable-v24_avd_bin_open_close_black_24dp.xml.flat",
+        "source": "com.yo.silent_hours.app-main-54:/drawable-v24/avd_bin_open_close_black_24dp.xml"
     },
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-52:/drawable-v24_vibration.png.flat",
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/drawable-v24/vibration.png"
+    },
+    {
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-52:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-52:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -58,6 +62,10 @@
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-52:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yo.silent_hours.app-merged_res-52:/layout_fragment_main.xml.flat",
+        "source": "com.yo.silent_hours.app-main-54:/layout/fragment_main.xml"
     },
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-52:/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -106,10 +114,6 @@
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-52:/xml_data_extraction_rules.xml.flat",
         "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/xml/data_extraction_rules.xml"
-    },
-    {
-        "merged": "com.yo.silent_hours.app-merged_res-52:/layout_fragment_details.xml.flat",
-        "source": "com.yo.silent_hours.app-main-54:/layout/fragment_details.xml"
     },
     {
         "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-merged_res-52:/mipmap-xxhdpi_ic_launcher.webp.flat",

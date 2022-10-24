@@ -28,6 +28,9 @@ class ProfileViewModel(private val repository: ProfileRepository): ViewModel(){
 //        WorkManagerHelper.setAlarms(workManager, profile, startHour, startMinute)
 //    }
 
+    fun cancelAllWorkByTag(tag: String) {
+//        WorkManagerHelper.cancelWork(workManager, tag)
+    }
 }
 
 
