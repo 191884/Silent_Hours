@@ -37,9 +37,9 @@ public final class ProfileRoomDatabase_Impl extends ProfileRoomDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `profile_table` (`profileId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `shr` INTEGER NOT NULL, `smin` INTEGER NOT NULL, `ehr` INTEGER NOT NULL, `emin` INTEGER NOT NULL, `vibSwitch` INTEGER NOT NULL, `timeInstance` TEXT NOT NULL, `repeatWeekly` INTEGER NOT NULL, `pauseSwitch` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `profile_table` (`profileId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `shr` INTEGER NOT NULL, `smin` INTEGER NOT NULL, `ehr` INTEGER NOT NULL, `emin` INTEGER NOT NULL, `vibSwitch` INTEGER NOT NULL, `d` TEXT NOT NULL, `timeInstance` TEXT NOT NULL, `repeatWeekly` INTEGER NOT NULL, `pauseSwitch` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '70b0040abce21a913dd0f2c41de75c2e')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7ad1bec7f9f2071aa6769f73e05d8f43')");
       }
 
       @Override
@@ -83,7 +83,7 @@ public final class ProfileRoomDatabase_Impl extends ProfileRoomDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsProfileTable = new HashMap<String, TableInfo.Column>(10);
+        final HashMap<String, TableInfo.Column> _columnsProfileTable = new HashMap<String, TableInfo.Column>(11);
         _columnsProfileTable.put("profileId", new TableInfo.Column("profileId", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProfileTable.put("name", new TableInfo.Column("name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProfileTable.put("shr", new TableInfo.Column("shr", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -91,6 +91,7 @@ public final class ProfileRoomDatabase_Impl extends ProfileRoomDatabase {
         _columnsProfileTable.put("ehr", new TableInfo.Column("ehr", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProfileTable.put("emin", new TableInfo.Column("emin", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProfileTable.put("vibSwitch", new TableInfo.Column("vibSwitch", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsProfileTable.put("d", new TableInfo.Column("d", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProfileTable.put("timeInstance", new TableInfo.Column("timeInstance", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProfileTable.put("repeatWeekly", new TableInfo.Column("repeatWeekly", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsProfileTable.put("pauseSwitch", new TableInfo.Column("pauseSwitch", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -105,7 +106,7 @@ public final class ProfileRoomDatabase_Impl extends ProfileRoomDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "70b0040abce21a913dd0f2c41de75c2e", "d696ee73472707ed7061bea621b89bef");
+    }, "7ad1bec7f9f2071aa6769f73e05d8f43", "9354b422926d571bd6eca1c2c327747c");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

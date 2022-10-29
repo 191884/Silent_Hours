@@ -1,26 +1,30 @@
 [
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-51:/layout/item_row.xml",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/layout/item_row.xml"
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-54:/layout/chip.xml",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-57:/layout/chip.xml"
     },
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-51:/layout/fragment_new_profile.xml",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/layout/fragment_new_profile.xml"
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-54:/layout/item_row.xml",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-57:/layout/item_row.xml"
     },
     {
-        "merged": "com.yo.silent_hours.app-mergeDebugResources-51:/layout/fragment_main.xml",
-        "source": "com.yo.silent_hours.app-main-54:/layout/fragment_main.xml"
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-54:/layout/fragment_new_profile.xml",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-57:/layout/fragment_new_profile.xml"
     },
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-51:/layout/fragment_main.xml",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/layout/fragment_main.xml"
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-54:/layout/fragment_main.xml",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-57:/layout/fragment_main.xml"
     },
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-51:/layout/activity_main.xml",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/layout/activity_main.xml"
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-54:/layout/fragment_details.xml",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-57:/layout/fragment_details.xml"
     },
     {
-        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-51:/layout/fragment_details.xml",
-        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-54:/layout/fragment_details.xml"
+        "merged": "com.yo.silent_hours.app-mergeDebugResources-54:/layout/fragment_details.xml",
+        "source": "com.yo.silent_hours.app-main-57:/layout/fragment_details.xml"
+    },
+    {
+        "merged": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-mergeDebugResources-54:/layout/activity_main.xml",
+        "source": "/home/Dr.Aman/.gradle/daemon/7.4/com.yo.silent_hours.app-main-57:/layout/activity_main.xml"
     }
 ]

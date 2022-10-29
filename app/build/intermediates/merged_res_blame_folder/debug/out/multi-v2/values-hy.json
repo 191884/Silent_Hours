@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-50:/values-hy/values-hy.xml",
+            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-53:/values-hy/values-hy.xml",
             "map": [
                 {
                     "source": "/home/Dr.Aman/.gradle/caches/transforms-3/1db85672a777aa5febbf4ce22d2be4ff/transformed/navigation-dynamic-features-fragment-2.5.2/res/values-hy/values-hy.xml",

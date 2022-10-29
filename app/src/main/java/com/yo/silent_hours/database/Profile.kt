@@ -18,7 +18,7 @@ data class Profile(
     var ehr: Int,
     var emin: Int,
     var vibSwitch: Boolean,
-//    var d: String,
+    var d: String,
     // Adding parameter for timestamp
     var timeInstance: String,
     var repeatWeekly: Boolean,

@@ -13,7 +13,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 import com.yo.silent_hours.R;
 import java.lang.NullPointerException;
@@ -26,27 +25,6 @@ public final class FragmentDetailsBinding implements ViewBinding {
 
   @NonNull
   public final ImageView audioMode;
-
-  @NonNull
-  public final Chip chip1;
-
-  @NonNull
-  public final Chip chip2;
-
-  @NonNull
-  public final Chip chip3;
-
-  @NonNull
-  public final Chip chip4;
-
-  @NonNull
-  public final Chip chip5;
-
-  @NonNull
-  public final Chip chip6;
-
-  @NonNull
-  public final Chip chip7;
 
   @NonNull
   public final TextView col1;
@@ -82,21 +60,12 @@ public final class FragmentDetailsBinding implements ViewBinding {
   public final TextView str;
 
   private FragmentDetailsBinding(@NonNull ScrollView rootView, @NonNull ImageView audioMode,
-      @NonNull Chip chip1, @NonNull Chip chip2, @NonNull Chip chip3, @NonNull Chip chip4,
-      @NonNull Chip chip5, @NonNull Chip chip6, @NonNull Chip chip7, @NonNull TextView col1,
-      @NonNull TextView col2, @NonNull ChipGroup dayPicker, @NonNull MaterialButton editButton,
-      @NonNull TextView end, @NonNull TextView endTxt, @NonNull LinearLayout linearLayout,
-      @NonNull TextView profileNote, @NonNull TextView profileTxt,
-      @NonNull ImageView repeatWeeklyIcon, @NonNull TextView str) {
+      @NonNull TextView col1, @NonNull TextView col2, @NonNull ChipGroup dayPicker,
+      @NonNull MaterialButton editButton, @NonNull TextView end, @NonNull TextView endTxt,
+      @NonNull LinearLayout linearLayout, @NonNull TextView profileNote,
+      @NonNull TextView profileTxt, @NonNull ImageView repeatWeeklyIcon, @NonNull TextView str) {
     this.rootView = rootView;
     this.audioMode = audioMode;
-    this.chip1 = chip1;
-    this.chip2 = chip2;
-    this.chip3 = chip3;
-    this.chip4 = chip4;
-    this.chip5 = chip5;
-    this.chip6 = chip6;
-    this.chip7 = chip7;
     this.col1 = col1;
     this.col2 = col2;
     this.dayPicker = dayPicker;
@@ -140,48 +109,6 @@ public final class FragmentDetailsBinding implements ViewBinding {
       id = R.id.audioMode;
       ImageView audioMode = ViewBindings.findChildViewById(rootView, id);
       if (audioMode == null) {
-        break missingId;
-      }
-
-      id = R.id.chip1;
-      Chip chip1 = ViewBindings.findChildViewById(rootView, id);
-      if (chip1 == null) {
-        break missingId;
-      }
-
-      id = R.id.chip2;
-      Chip chip2 = ViewBindings.findChildViewById(rootView, id);
-      if (chip2 == null) {
-        break missingId;
-      }
-
-      id = R.id.chip3;
-      Chip chip3 = ViewBindings.findChildViewById(rootView, id);
-      if (chip3 == null) {
-        break missingId;
-      }
-
-      id = R.id.chip4;
-      Chip chip4 = ViewBindings.findChildViewById(rootView, id);
-      if (chip4 == null) {
-        break missingId;
-      }
-
-      id = R.id.chip5;
-      Chip chip5 = ViewBindings.findChildViewById(rootView, id);
-      if (chip5 == null) {
-        break missingId;
-      }
-
-      id = R.id.chip6;
-      Chip chip6 = ViewBindings.findChildViewById(rootView, id);
-      if (chip6 == null) {
-        break missingId;
-      }
-
-      id = R.id.chip7;
-      Chip chip7 = ViewBindings.findChildViewById(rootView, id);
-      if (chip7 == null) {
         break missingId;
       }
 
@@ -251,9 +178,8 @@ public final class FragmentDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentDetailsBinding((ScrollView) rootView, audioMode, chip1, chip2, chip3,
-          chip4, chip5, chip6, chip7, col1, col2, dayPicker, editButton, end, endTxt, linearLayout,
-          profileNote, profileTxt, repeatWeeklyIcon, str);
+      return new FragmentDetailsBinding((ScrollView) rootView, audioMode, col1, col2, dayPicker,
+          editButton, end, endTxt, linearLayout, profileNote, profileTxt, repeatWeeklyIcon, str);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

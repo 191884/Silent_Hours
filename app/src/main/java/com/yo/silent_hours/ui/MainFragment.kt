@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -21,8 +20,6 @@ import com.google.android.material.snackbar.Snackbar
 import com.yo.silent_hours.R
 import com.yo.silent_hours.database.Profile
 import com.yo.silent_hours.database.ProfileViewModel
-import com.yo.silent_hours.database.ProfileViewModelFactory
-import com.yo.silent_hours.database.QuiteApplication
 import com.yo.silent_hours.ui.adapter.AdapterCallback
 import com.yo.silent_hours.ui.adapter.ProfileListAdapter
 import com.yo.silent_hours.utils.SwipeToDeleteCallback
@@ -30,7 +27,7 @@ import com.yo.silent_hours.utils.Utils
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-//@AndroidEntryPoint
+@AndroidEntryPoint
 class MainFragment : Fragment() {
 
     @Inject lateinit var audioManager: AudioManager
@@ -38,9 +35,8 @@ class MainFragment : Fragment() {
 
     private val profilesListData: ArrayList<Profile> = ArrayList()
     private lateinit var profileListAdapter: ProfileListAdapter
-    private val viewModel: ProfileViewModel by viewModels {
-        ProfileViewModelFactory((activity?.application as QuiteApplication).repository)
-    }
+    private val viewModel: ProfileViewModel by viewModels()
+//    { ProfileViewModelFactory((activity?.application as QuiteApplication).repository) }
     private lateinit var coordLayout : ConstraintLayout
 
     private val adapterCallback = object : AdapterCallback {
@@ -123,7 +119,7 @@ class MainFragment : Fragment() {
     }
 
     private fun deleteItem(profile: Profile) {
-        viewModel.cancelAllWorkByTag(profile.profileId.toString())
+//        viewModel.cancelAllWorkByTag(profile.profileId.toString())
         Utils.showSnackBar(
             coordLayout,
             "Profile is removed from the list.",

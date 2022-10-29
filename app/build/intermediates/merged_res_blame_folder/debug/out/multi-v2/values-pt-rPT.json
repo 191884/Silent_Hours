@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-50:/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-53:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/home/Dr.Aman/.gradle/caches/transforms-3/bb5a577f310c067fb341bacc4120b6df/transformed/navigation-ui-2.5.2/res/values-pt-rPT/values-pt-rPT.xml",

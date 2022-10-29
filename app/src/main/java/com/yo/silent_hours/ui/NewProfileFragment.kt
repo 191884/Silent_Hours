@@ -3,42 +3,50 @@ package com.yo.silent_hours.ui
 import android.os.Build
 import android.os.Bundle
 import android.preference.PreferenceManager
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import com.google.android.material.snackbar.Snackbar
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.yo.silent_hours.R
 import com.yo.silent_hours.database.Profile
 import com.yo.silent_hours.database.ProfileViewModel
-import com.yo.silent_hours.database.ProfileViewModelFactory
-import com.yo.silent_hours.database.QuiteApplication
 import com.yo.silent_hours.databinding.FragmentNewProfileBinding
 import com.yo.silent_hours.utils.Utils
+import com.yo.silent_hours.utils.Utils.checkDays
 import com.yo.silent_hours.utils.Utils.selectDays
 import com.yo.silent_hours.utils.Utils.setStringFormat
 import com.yo.silent_hours.utils.Utils.showTimePicker
+import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
 import java.util.*
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class NewProfileFragment() : Fragment() {
 
-    private val viewModel: ProfileViewModel by viewModels {
-        ProfileViewModelFactory((activity?.application as QuiteApplication).repository)
-    }
+    @Inject
+    lateinit var gson: Gson
+
+
+    private val viewModel: ProfileViewModel by viewModels()
+//    { ProfileViewModelFactory((activity?.application as QuiteApplication).repository) }
+
     private var _binding: FragmentNewProfileBinding? = null
     private val binding
         get() = _binding!!
-
+    private val type = object : TypeToken<List<Boolean>>() {}.type
     private var shr = 0
     private var smin = 0
     private var ehr = 0
     private var emin = 0
-    private var daysSelected: MutableList<String> = ArrayList()
+    private var daysSelected: MutableList<Boolean> = arrayListOf(false, false, false, false, false, false, false)
     private var currentTime = Calendar.getInstance()
     private val hour = currentTime.get(Calendar.HOUR_OF_DAY)
     private val minute = currentTime.get(Calendar.MINUTE)
@@ -56,7 +64,6 @@ class NewProfileFragment() : Fragment() {
         // Inflate the layout for this fragment
 //        val view = inflater.inflate(R.layout.fragment_new_profile, container, false)
         _binding = FragmentNewProfileBinding.inflate(inflater, container, false)
-
 
         binding.toolBar.setNavigationOnClickListener { requireActivity().onBackPressed() }
         binding.vibSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
@@ -82,6 +89,7 @@ class NewProfileFragment() : Fragment() {
             )
         }
 
+
         binding.EndTime.setOnClickListener {
             requireContext().showTimePicker(
                 onTimeSelected = { hour, min ->
@@ -100,14 +108,17 @@ class NewProfileFragment() : Fragment() {
 
         val args = arguments?.getParcelable<Profile>("Profile")
         if (args != null) {
-//            daysSelected = Utils.daysList(args.d)
-//            Utils.selectedDays(daysSelected, binding.dayPicker)
+            daysSelected = Utils.daysList(args.d)
+//            selectDays(binding, daysSelected)
             binding.NameInput.setText(args.name)
 
             binding.StartTime.setStringFormat(
                 Utils.setTimeString(args.shr),
                 Utils.setTimeString(args.smin)
             )
+
+            checkDays(binding,gson.fromJson(args.d, type))
+
             shr = args.shr
             smin = args.smin
             ehr = args.ehr
@@ -134,7 +145,7 @@ class NewProfileFragment() : Fragment() {
                 "Please enter different start and end time",
                 Snackbar.LENGTH_LONG
             )
-        } else if (selectDays(binding, daysSelected).isEmpty()) {
+        } else if (selectDays(binding, daysSelected).all { false }) {
             Utils.showSnackBar(view, "Please select the day(s)", Snackbar.LENGTH_LONG)
         } else if ((shr > ehr) && (shr - ehr <= 12)) {
             Utils.showSnackBar(
@@ -157,6 +168,7 @@ class NewProfileFragment() : Fragment() {
             smin = smin,
             ehr = ehr,
             emin = emin,
+            d = gson.toJson(daysSelected),
             pauseSwitch = true,
             repeatWeekly = binding.repeatWeeklySwitch.isChecked,
             vibSwitch = binding.vibSwitch.isChecked,

@@ -18,7 +18,7 @@ abstract class ProfileRoomDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: ProfileRoomDatabase? = null
 
-        fun getDatabase(context: Context, scope: CoroutineScope): ProfileRoomDatabase {
+        fun getDatabase(context: Context): ProfileRoomDatabase {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
@@ -26,45 +26,11 @@ abstract class ProfileRoomDatabase : RoomDatabase() {
                     "Profile_Database"
                 )
                     .fallbackToDestructiveMigration()
-                    .addCallback(WordDatabaseCallback(scope))
                     .build()
                 INSTANCE = instance
                 instance
             }
         }
-
-        private class WordDatabaseCallback(
-            private val scope: CoroutineScope
-        ) : RoomDatabase.Callback() {
-            /**
-             * Override the onCreate method to populate the database.
-             */
-            override fun onCreate(db: SupportSQLiteDatabase) {
-                super.onCreate(db)
-                // If you want to keep the data through app restarts,
-                // comment out the following line.
-//                INSTANCE?.let { database ->
-//                    scope.launch(Dispatchers.IO) {
-//                        populateDatabase(database.wordDao())
-//                    }
-//                }
-            }
-        }
-
-        /**
-         * Populate the database in a new coroutine.
-         * If you want to start with more words, just add them.
-         */
-//        suspend fun populateDatabase(wordDao: WordDao) {
-//            // Start the app with a clean database every time.
-//            // Not needed if you only populate on creation.
-//            wordDao.deleteAll()
-//
-//            var word = Word("Hello")
-//            wordDao.insert(word)
-//            word = Word("World!")
-//            wordDao.insert(word)
-//        }
 
     }
 }

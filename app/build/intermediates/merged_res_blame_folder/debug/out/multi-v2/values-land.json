@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-50:/values-land/values-land.xml",
+            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-53:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/home/Dr.Aman/.gradle/caches/transforms-3/5fe266a8a11bedbce13797039ef264bb/transformed/appcompat-1.5.1/res/values-land/values-land.xml",

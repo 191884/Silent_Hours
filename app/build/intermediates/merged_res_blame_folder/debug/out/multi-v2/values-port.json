@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-50:/values-port/values-port.xml",
+            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-53:/values-port/values-port.xml",
             "map": [
                 {
                     "source": "/home/Dr.Aman/.gradle/caches/transforms-3/5fe266a8a11bedbce13797039ef264bb/transformed/appcompat-1.5.1/res/values-port/values-port.xml",

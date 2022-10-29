@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-50:/values-sq/values-sq.xml",
+            "outputFile": "com.yo.silent_hours.app-mergeDebugResources-53:/values-sq/values-sq.xml",
             "map": [
                 {
                     "source": "/home/Dr.Aman/.gradle/caches/transforms-3/6bc45ffcba184dbb4d0f7d5e1097ab43/transformed/core-1.9.0/res/values-sq/values-sq.xml",

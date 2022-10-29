@@ -4,11 +4,18 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import androidx.work.WorkManager
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class ProfileViewModel(private val repository: ProfileRepository): ViewModel(){
+@HiltViewModel
+class ProfileViewModel @Inject constructor(
+    private val repository: ProfileRepository,
+    private val workManager: WorkManager
+    ): ViewModel(){
 
     val allProfiles: LiveData<List<Profile>> = repository.allProfiles
 
@@ -28,18 +35,7 @@ class ProfileViewModel(private val repository: ProfileRepository): ViewModel(){
 //        WorkManagerHelper.setAlarms(workManager, profile, startHour, startMinute)
 //    }
 
-    fun cancelAllWorkByTag(tag: String) {
+//    fun cancelAllWorkByTag(tag: String) {
 //        WorkManagerHelper.cancelWork(workManager, tag)
-    }
-}
-
-
-class ProfileViewModelFactory(private val repository: ProfileRepository) : ViewModelProvider.Factory {
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(ProfileViewModel::class.java)) {
-            @Suppress("UNCHECKED_CAST")
-            return ProfileViewModel(repository) as T
-        }
-        throw IllegalArgumentException("Unknown ViewModel class")
-    }
+//    }
 }
