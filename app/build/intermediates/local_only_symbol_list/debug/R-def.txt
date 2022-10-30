@@ -13,6 +13,7 @@ drawable ic_add
 drawable ic_arrow_back
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_notifications_off
 drawable ic_repeat
 drawable mute
 drawable vibration

@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import androidx.work.WorkManager
+import com.yo.silent_hours.workManager.WorkManagerHelper
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -31,11 +32,11 @@ class ProfileViewModel @Inject constructor(
         repository.update(profile)
     }
 
-//    fun setAlarms(profile: Profile, startHour: Int = profile.shr, startMinute: Int = profile.smin) {
-//        WorkManagerHelper.setAlarms(workManager, profile, startHour, startMinute)
-//    }
+    fun setAlarms(profile: Profile, startHour: Int = profile.shr, startMinute: Int = profile.smin) {
+        WorkManagerHelper.setAlarms(workManager, profile, startHour, startMinute)
+    }
 
-//    fun cancelAllWorkByTag(tag: String) {
-//        WorkManagerHelper.cancelWork(workManager, tag)
-//    }
+    fun cancelAllWorkByTag(tag: String) {
+        WorkManagerHelper.cancelWork(workManager, tag)
+    }
 }

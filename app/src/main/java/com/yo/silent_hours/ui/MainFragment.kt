@@ -1,8 +1,11 @@
 package com.yo.silent_hours.ui
 
 import android.app.NotificationManager
+import android.content.Intent
 import android.media.AudioManager
+import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -87,7 +90,11 @@ class MainFragment : Fragment() {
 
         val button:FloatingActionButton = view.findViewById(R.id.add_button)
         button.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_newProfileFragment)
+            if (doNotDisturbPermissionCheck()) {
+                permissionDialog()
+            } else {
+                findNavController().navigate(R.id.action_mainFragment_to_newProfileFragment)
+            }
         }
         return view
     }
@@ -112,6 +119,30 @@ class MainFragment : Fragment() {
             }
         }
     }
+    private fun doNotDisturbPermissionCheck(): Boolean {
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !notificationManager.isNotificationPolicyAccessGranted
+    }
+
+private fun permissionDialog() {
+    AlertDialog.Builder(requireContext())
+        .setTitle("Permission Required")
+        .setMessage("Please give the Do Not Disturb access permission for the app to work` properly. Click OK to continue.")
+        .setCancelable(false)
+        .setPositiveButton("Ok") { i, dialogInterface ->
+            val intent = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                Intent(
+                    Settings
+                        .ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS
+                )
+            } else {
+                TODO("VERSION.SDK_INT < M")
+            }
+
+            startActivity(intent)
+        }
+        .show()
+}
+
 
     private fun removeItem(position: Int) {
         viewModel.delete(profilesListData[position])
@@ -119,7 +150,7 @@ class MainFragment : Fragment() {
     }
 
     private fun deleteItem(profile: Profile) {
-//        viewModel.cancelAllWorkByTag(profile.profileId.toString())
+        viewModel.cancelAllWorkByTag(profile.profileId.toString())
         Utils.showSnackBar(
             coordLayout,
             "Profile is removed from the list.",

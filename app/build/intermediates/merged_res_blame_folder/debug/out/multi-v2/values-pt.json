@@ -4,6 +4,23 @@
             "outputFile": "com.yo.silent_hours.app-mergeDebugResources-53:/values-pt/values-pt.xml",
             "map": [
                 {
+                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/16235219730c2e5276b543d83be8b903/transformed/navigation-dynamic-features-fragment-2.5.3/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,157,255,353,417,495",
+                        "endColumns": "101,97,97,63,77,80",
+                        "endOffsets": "152,250,348,412,490,571"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,34,35,36",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "2843,2945,3043,3373,3437,3515",
+                        "endColumns": "101,97,97,63,77,80",
+                        "endOffsets": "2940,3038,3136,3432,3510,3591"
+                    }
+                },
+                {
                     "source": "/home/Dr.Aman/.gradle/caches/transforms-3/6bc45ffcba184dbb4d0f7d5e1097ab43/transformed/core-1.9.0/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/bb5a577f310c067fb341bacc4120b6df/transformed/navigation-ui-2.5.2/res/values-pt/values-pt.xml",
+                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/14660f736674afeb21d602eac74eaf20/transformed/navigation-ui-2.5.3/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,23 +69,6 @@
                         "startOffsets": "3141,3253",
                         "endColumns": "111,119",
                         "endOffsets": "3248,3368"
-                    }
-                },
-                {
-                    "source": "/home/Dr.Aman/.gradle/caches/transforms-3/1db85672a777aa5febbf4ce22d2be4ff/transformed/navigation-dynamic-features-fragment-2.5.2/res/values-pt/values-pt.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,157,255,353,417,495",
-                        "endColumns": "101,97,97,63,77,80",
-                        "endOffsets": "152,250,348,412,490,571"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,34,35,36",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "2843,2945,3043,3373,3437,3515",
-                        "endColumns": "101,97,97,63,77,80",
-                        "endOffsets": "2940,3038,3136,3432,3510,3591"
                     }
                 }
             ]

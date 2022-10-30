@@ -1,10 +1,14 @@
 package com.yo.silent_hours.utils
 
+import android.app.NotificationManager
+import android.app.PendingIntent
 import android.app.TimePickerDialog
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.EditText
+import androidx.core.app.NotificationCompat
 import com.google.android.material.chip.Chip
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
@@ -13,6 +17,7 @@ import com.yo.silent_hours.R
 import com.yo.silent_hours.databinding.ChipBinding
 import com.yo.silent_hours.databinding.FragmentDetailsBinding
 import com.yo.silent_hours.databinding.FragmentNewProfileBinding
+import java.util.*
 
 object Utils {
 
@@ -44,6 +49,25 @@ object Utils {
                 minText
             )
         )
+    }
+
+    fun sendNotification(
+        applicationContext: Context,
+        profileName: String,
+        state: String,
+        pi: PendingIntent
+    ) {
+        val notificationManager =
+            applicationContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val notification = NotificationCompat.Builder(applicationContext, "422")
+            .setSmallIcon(R.drawable.ic_notifications_off)
+            .setColor(Color.rgb(30, 136, 229))
+            .setContentTitle("Profile $state")
+            .setContentText("$profileName profile has $state")
+            .setAutoCancel(true)
+            .setContentIntent(pi)
+            .build()
+        notificationManager.notify(1112, notification)
     }
 
     fun daysList(profileDays: String): MutableList<Boolean> {
@@ -120,6 +144,12 @@ object Utils {
         val chip = ChipBinding.inflate(layoutInflater).root
         chip.text = label
         return chip
+    }
+
+    fun timeCheck(calender: Calendar) {
+        if (calender.timeInMillis < System.currentTimeMillis()) {
+            calender.add(Calendar.DAY_OF_YEAR, 7)
+        }
     }
 
 }

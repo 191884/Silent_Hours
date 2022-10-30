@@ -33,6 +33,14 @@ public abstract class Hilt_DetailsFragment extends BottomSheetDialogFragment imp
 
   private boolean injected = false;
 
+  Hilt_DetailsFragment() {
+    super();
+  }
+
+  Hilt_DetailsFragment(int contentLayoutId) {
+    super(contentLayoutId);
+  }
+
   @Override
   @CallSuper
   public void onAttach(Context context) {

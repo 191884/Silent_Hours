@@ -182,7 +182,7 @@ class NewProfileFragment() : Fragment() {
 //            profile.profileId = id
             viewModel.update(profile)
         }
-//        viewModel.setAlarms(profile)
+        viewModel.setAlarms(profile)
         Navigation.findNavController(binding.root)
             .navigate(R.id.action_newProfileFragment_to_mainFragment)
     }
