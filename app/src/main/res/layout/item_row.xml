@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<soup.neumorphism.NeumorphCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="8dp"
-    android:elevation="16dp"
-    android:padding="5dp"
-    app:cardCornerRadius="8dp">
+    app:neumorph_shadowColorLight="@color/trans"
+    app:neumorph_shadowColorDark="@color/grey"
+    app:neumorph_shapeType="flat">
 
     <RelativeLayout
         android:id="@+id/profile_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/black"
         android:padding="5dp">
-
-        <!--        <com.github.abdularis.civ.AvatarImageView-->
-        <!--                android:id="@+id/TxtImg"-->
-        <!--                android:layout_width="60dp"-->
-        <!--                android:layout_height="60dp"-->
-        <!--                android:padding="3dp"-->
-        <!--                app:avatarBackgroundColor="@color/colorAccent"-->
-        <!--                app:strokeColor="@android:color/white"-->
-        <!--                app:strokeWidth="1dp"-->
-        <!--                app:text="A"-->
-        <!--                app:textSize="22sp"-->
-        <!--                android:layout_centerVertical="true"/>-->
 
         <TextView
             android:id="@+id/ProfileName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="6dp"
-            android:text="profile_name"
-            android:textSize="24sp"
+            android:layout_marginBottom="12dp"
+            android:text="Profile Name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
             android:transitionName="profileName" />
 
         <TextView
@@ -46,9 +34,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/ProfileName"
             android:text="TimeStamp"
+            android:textColor="@color/white"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="2dp"
-            android:textSize="12sp" />
+            android:textSize="18dp" />
 
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/pauseSwitch"
@@ -60,4 +48,4 @@
 
     </RelativeLayout>
 
-</androidx.cardview.widget.CardView>
+</soup.neumorphism.NeumorphCardView>
