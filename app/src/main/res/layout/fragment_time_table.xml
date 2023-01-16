@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout"
+    android:background="@drawable/lightblue_gradient"
+    tools:context=".ui.TimeTableFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your TimeTable"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sonsie_one"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="45dp">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Time"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Mon"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Tues"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Wed"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Thu"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Fri"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="45dp">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"/>
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:text="9-10"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Mon9_10"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon9-10"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Tues9_10"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Tues9-10"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Wed9_10"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed9-10"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Thu9_10"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu9-10"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Fri9_10"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri9-10"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="45dp">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="10-11"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Mon10_11"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon10-11"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Tues10_11"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tues10-11"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Wed10_11"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed10-11"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Thu10_11"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu10-11"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Fri10_11"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri10-11"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="45dp">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="11-12"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Mon11_12"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon11-12"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Tues11_12"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tues11-12"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Wed11_12"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed11-12"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Thu11_12"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu11-12"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Fri11_12"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri11-12"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="12-1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Mon12_1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon12-1"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Tues12_1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tues12-1"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Wed12_1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed12-1"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Thu12_1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu12-1"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/Fri12_1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri12-1"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="45dp">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="1-2"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Mon1_2"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon1-2"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Tues1_2"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tues1-2"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Wed1_2"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed1-2"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Thu1_2"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu1-2"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Fri1_2"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri1_2"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="45dp">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="2-3"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Mon2_3"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon2-3"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Tues2_3"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tues2-3"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Wed2_3"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed2-3"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Thu2_3"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu2-3"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Fri2_3"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri2-3"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="45dp">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="3-4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Mon3_4"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon3-4"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Tues3_4"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tues3-4"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Wed3_4"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed3-4"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Thu3_4"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu3-4"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Fri3_4"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri3-4"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="45dp">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="4-5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Mon4_5"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mon4-5"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Tues4_5"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tues4_5"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Wed4_5"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wed4-5"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Thu4_5"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thu4-5"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/Fri4_5"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fri4-5"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noti_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    app:neumorph_shadowColorLight="@color/trans"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:padding="15dp"
+    android:background="@color/trans"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:id="@+id/noti_profile_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFA500"
+                android:checked="true"/>
+            <TextView
+                android:id="@+id/NotiProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:text="Notification Name"
+                android:textColor="@color/textColor"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:transitionName="profileName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_below="@id/top">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/note"/>
+            <TextView
+                android:id="@+id/notiNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="3dp"
+                android:text="Your Note"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_below="@id/notelayout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock"/>
+            <TextView
+                android:id="@+id/notiTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notificaton Time"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="3dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_instance"/>
+            <TextView
+                android:id="@+id/notiTimeStamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TimeStamp"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="3dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/notiPauseSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+</soup.neumorphism.NeumorphCardView>

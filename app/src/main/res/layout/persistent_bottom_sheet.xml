@@ -5,58 +5,58 @@
     android:id="@+id/persistent_bottom_sheet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFFFFF"
     android:orientation="vertical"
-    app:behavior_peekHeight="556dp"
     android:maxHeight="650dp"
-    android:backgroundTint="@color/black"
+    app:behavior_peekHeight="556dp"
+    android:background="@color/trans"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
-    <TextView
-        android:id="@+id/textView3"
+    <soup.neumorphism.NeumorphCardView
         android:layout_width="match_parent"
-        android:layout_height="26dp"
-        android:layout_marginTop="0dp"
-        android:background="@color/black"
-        android:gravity="bottom|center_horizontal"
-        android:text="—"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+        android:layout_height="match_parent"
+        >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:textColor="@color/white"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/black"
-        android:gravity="center|top"
-        android:text="Explore Persistent Bottom Sheet"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/timeTable"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Show TimeTable"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:padding="15dp"
+                app:neumorph_shadowColorLight="@color/black"
+                android:backgroundTint="#44000000"
+                />
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/add_Button"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Add Profile"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:padding="15dp"
+                app:neumorph_shadowColorLight="@color/black"
+                android:backgroundTint="#44000000"
+                />
 
-    <soup.neumorphism.NeumorphButton
-        android:id="@+id/add_Button"
-        app:neumorph_shadowColorLight="@color/black"
-        android:padding="15dp"
-        android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:layout_height="65dp"
-        android:backgroundTint="#44000000"
-        android:text="Add Interval"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
 
 
 </LinearLayout>

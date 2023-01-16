@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/blue_gradient"
     android:fillViewport="true"
     tools:context=".ui.NewProfileFragment">
 
@@ -18,7 +18,6 @@
             android:id="@+id/toolBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/black"
             app:navigationIcon="@drawable/ic_arrow_back" />
 
 
@@ -219,7 +218,7 @@
                 android:layout_height="wrap_content"
                 android:text="Submit"
                 android:layout_marginBottom="50dp"
-                android:textColor="#ffffff"
+                android:textColor="@color/textColor"
                 app:fabSize="normal" />
         </RelativeLayout>
     </RelativeLayout>

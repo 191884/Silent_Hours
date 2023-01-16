@@ -13,38 +13,77 @@
         android:id="@+id/profile_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
         android:padding="5dp">
 
-        <TextView
-            android:id="@+id/ProfileName"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginBottom="12dp"
-            android:text="Profile Name"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:transitionName="profileName" />
+            android:id="@+id/prof_line"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/timeStamp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ProfileName"
-            android:text="TimeStamp"
-            android:textColor="@color/white"
-            android:layout_marginStart="18dp"
-            android:textSize="18dp" />
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/pauseSwitch"
+                app:thumbTint="@color/redColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <com.google.android.material.switchmaterial.SwitchMaterial
-            android:id="@+id/pauseSwitch"
+            <TextView
+                android:id="@+id/ProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:text="Profile Name"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="30sp"
+                android:transitionName="profileName" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"/>
+            android:layout_below="@+id/prof_line"
+            android:layout_marginLeft="8dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock"/>
+
+            <TextView
+                android:id="@+id/timeStamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TimeStamp"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="4dp"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_instance"/>
+            <TextView
+                android:id="@+id/timeInstance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textSize="18dp"
+                android:text="time"
+                android:textColor="@color/textColor"/>
+        </LinearLayout>
+
+<!--        <com.google.android.material.switchmaterial.SwitchMaterial-->
+<!--            android:id="@+id/pauseSwitch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="10dp"/>-->
 
     </RelativeLayout>
 

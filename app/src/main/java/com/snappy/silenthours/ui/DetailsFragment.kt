@@ -57,8 +57,8 @@ class DetailsFragment : BottomSheetDialogFragment() {
         binding.profileTxt.text = profile.name
         binding.str.text = "${setTimeString(profile.shr)}:${setTimeString(profile.smin)}"
         binding.end.text = "${setTimeString(profile.ehr)}:${setTimeString(profile.emin)}"
-        if (profile.vibSwitch) binding.audioMode.setImageResource(R.drawable.vibration)
-        else binding.audioMode.setImageResource(R.drawable.mute)
+        if (profile.vibSwitch) binding.audioMode.setImageResource(R.drawable.vibration_img)
+        else binding.audioMode.setImageResource(R.drawable.muted_img)
         binding.repeatWeeklyIcon.visibility = if (profile.repeatWeekly) View.VISIBLE else View.GONE
     }
 

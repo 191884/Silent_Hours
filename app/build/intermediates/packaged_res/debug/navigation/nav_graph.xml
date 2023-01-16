@@ -7,19 +7,25 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.yo.silent_hours.ui.MainFragment"
+        android:name="com.snappy.silenthours.ui.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_timeTableFragment"
+            app:destination="@id/timeTableFragment" />
         <action
             android:id="@+id/action_mainFragment_to_newProfileFragment"
             app:destination="@id/newProfileFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            android:id="@+id/action_mainFragment_to_notiMainFragment"
+            app:destination="@id/notiMainFragment" />
     </fragment>
     <fragment
         android:id="@+id/newProfileFragment"
-        android:name="com.yo.silent_hours.ui.NewProfileFragment"
+        android:name="com.snappy.silenthours.ui.NewProfileFragment"
         android:label="fragment_new_profile"
         tools:layout="@layout/fragment_new_profile" >
         <action
@@ -28,11 +34,41 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.yo.silent_hours.ui.DetailsFragment"
+        android:name="com.snappy.silenthours.ui.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <action
             android:id="@+id/action_detailsFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeTableFragment"
+        android:name="com.snappy.silenthours.ui.TimeTableFragment"
+        android:label="fragment_time_table"
+        tools:layout="@layout/fragment_time_table" >
+        <action
+            android:id="@+id/action_timeTableFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notiMainFragment"
+        android:name="com.snappy.silenthours.ui.NotiMainFragment"
+        android:label="fragment_noti_main"
+        tools:layout="@layout/fragment_noti_main" >
+        <action
+            android:id="@+id/action_notiMainFragment_to_reminderFragment"
+            app:destination="@id/reminderFragment" />
+        <action
+            android:id="@+id/action_notiMainFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.snappy.silenthours.ui.ReminderFragment"
+        android:label="fragment_reminder"
+        tools:layout="@layout/fragment_reminder" >
+        <action
+            android:id="@+id/action_reminderFragment_to_notiMainFragment"
+            app:destination="@id/notiMainFragment" />
     </fragment>
 </navigation>

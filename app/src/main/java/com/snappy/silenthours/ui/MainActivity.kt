@@ -17,10 +17,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
     }
+
     override fun onSupportNavigateUp(): Boolean {
         val navController = Navigation.findNavController(binding.myNavHostFragment.rootView)
         return navController.navigateUp() || super.onSupportNavigateUp()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        finish()
     }
 }

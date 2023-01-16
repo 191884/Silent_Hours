@@ -11,4 +11,10 @@
     <color name="trans">#00000000 </color>.
     <color name="grey">#F9231919</color>
     <color name="colorAccent">#FF3700B3</color>
+    <color name="textColor">#FF000000</color>
+<!--    <color name="mainBackgroundColor">#235347</color>-->
+    <color name="statusBar">#DCFF0000</color>
+    <color name="redColor">#DCFF0000</color>
+    <color name="mainBackgroundColor">#DAF1DE</color>
+    <color name="bottomSheetBackgroundColor">#F5F0F6</color>
 </resources>

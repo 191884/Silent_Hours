@@ -127,6 +127,7 @@ object WorkManagerHelper {
 //                )
 //                .build()
         }
+        Log.e("WorkManager", (c.timeInMillis - System.currentTimeMillis()).toString())
         workManager.enqueue(alarmRequest)
     }
 

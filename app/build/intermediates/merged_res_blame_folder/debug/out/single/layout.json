@@ -1,26 +1,58 @@
 [
     {
-        "merged": "com.yo.silent_hours.app-mergeDebugResources-54:/layout/fragment_main.xml",
-        "source": "com.yo.silent_hours.app-main-57:/layout/fragment_main.xml"
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/fragment_new_profile.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_new_profile.xml"
     },
     {
-        "merged": "com.yo.silent_hours.app-mergeDebugResources-54:/layout/chip.xml",
-        "source": "com.yo.silent_hours.app-main-57:/layout/chip.xml"
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/noti_item_row.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/noti_item_row.xml"
     },
     {
-        "merged": "com.yo.silent_hours.app-mergeDebugResources-54:/layout/item_row.xml",
-        "source": "com.yo.silent_hours.app-main-57:/layout/item_row.xml"
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/persistent_bottom_sheet.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/persistent_bottom_sheet.xml"
     },
     {
-        "merged": "com.yo.silent_hours.app-mergeDebugResources-54:/layout/fragment_new_profile.xml",
-        "source": "com.yo.silent_hours.app-main-57:/layout/fragment_new_profile.xml"
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/activity_main.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/activity_main.xml"
     },
     {
-        "merged": "com.yo.silent_hours.app-mergeDebugResources-54:/layout/activity_main.xml",
-        "source": "com.yo.silent_hours.app-main-57:/layout/activity_main.xml"
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/fragment_details.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_details.xml"
     },
     {
-        "merged": "com.yo.silent_hours.app-mergeDebugResources-54:/layout/fragment_details.xml",
-        "source": "com.yo.silent_hours.app-main-57:/layout/fragment_details.xml"
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/fragment_reminder.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_reminder.xml"
+    },
+    {
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/fragment_noti_main.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_noti_main.xml"
+    },
+    {
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/fragment_time_table.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_time_table.xml"
+    },
+    {
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/chip.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/chip.xml"
+    },
+    {
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/item_row.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/item_row.xml"
+    },
+    {
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/custom_dialog.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/trail.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/trail.xml"
+    },
+    {
+        "merged": "com.snappy.silenthours.app-mergeDebugResources-59:/layout/item_row.xml",
+        "source": "com.snappy.silenthours.app-main-62:/layout/item_row.xml"
+    },
+    {
+        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-mergeDebugResources-59:/layout/fragment_main.xml",
+        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_main.xml"
     }
 ]

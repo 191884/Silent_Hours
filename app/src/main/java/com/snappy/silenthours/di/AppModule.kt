@@ -8,6 +8,9 @@ import com.google.gson.Gson
 import com.snappy.silenthours.database.ProfileDAO
 import com.snappy.silenthours.database.ProfileRepository
 import com.snappy.silenthours.database.ProfileRoomDatabase
+import com.snappy.silenthours.notificationDb.NotiProfileDAO
+import com.snappy.silenthours.notificationDb.NotiProfileRepository
+import com.snappy.silenthours.notificationDb.NotiProfileRoomDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,7 +29,15 @@ object AppModule {
         ProfileRoomDatabase.getDatabase(context).profileDao()
 
     @Provides
+    fun providesNotiProfileDAO(@ApplicationContext context: Context) =
+        NotiProfileRoomDatabase.getDatabase(context).notiProfileDao()
+
+    @Provides
     fun providesProfileRepository(profileDao: ProfileDAO) = ProfileRepository(profileDao)
+
+    @Provides
+    fun providesNotiProfileRepository(notiProfileDao: NotiProfileDAO) = NotiProfileRepository(notiProfileDao)
+
 
     @Provides
     fun providesAudioManager(@ApplicationContext context: Context): AudioManager =

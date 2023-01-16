@@ -7,12 +7,13 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.provider.Settings
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.util.Log
+import android.view.*
 import android.view.animation.AnimationUtils
 import android.widget.Button
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -30,6 +31,10 @@ import com.snappy.silenthours.ui.adapter.ProfileListAdapter
 import com.snappy.silenthours.utils.SwipeToDeleteCallback
 import com.snappy.silenthours.utils.Utils
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
@@ -43,6 +48,7 @@ class MainFragment : Fragment() {
     @Inject
     lateinit var notificationManager: NotificationManager
 
+    private val handler = Handler()
     private val profilesListData: ArrayList<Profile> = ArrayList()
     private lateinit var profileListAdapter: ProfileListAdapter
     private val viewModel: ProfileViewModel by viewModels()
@@ -76,10 +82,13 @@ class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
         binding = FragmentMainBinding.inflate(layoutInflater,container,false)
-        val bottomsheetView = inflater.inflate(R.layout.persistent_bottom_sheet, container, false)
+        (activity as AppCompatActivity).setSupportActionBar(binding.toolBar)
+        setHasOptionsMenu(true)
+
+        inflater.inflate(R.layout.persistent_bottom_sheet, container, false)
         coordLayout = binding.constraintLayout
         blink()
         return binding.root
@@ -92,9 +101,15 @@ class MainFragment : Fragment() {
         profileListAdapter = ProfileListAdapter(adapterCallback)
         recyclerview.adapter = profileListAdapter
         recyclerview.layoutManager = LinearLayoutManager(context)
-
         ItemTouchHelper(swipeToDeleteCallback).attachToRecyclerView(recyclerview)
 
+        binding.title.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_notiMainFragment)
+        }
+        val timeTableButton: Button = view.findViewById(R.id.timeTable)
+        timeTableButton.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_timeTableFragment)
+        }
         viewModel.allProfiles.observe(viewLifecycleOwner) { profilesList ->
             profilesListData.clear()
             profilesListData.addAll(profilesList)
@@ -110,6 +125,15 @@ class MainFragment : Fragment() {
                 findNavController().navigate(R.id.action_mainFragment_to_newProfileFragment)
             }
         }
+
+        requireActivity()
+            .onBackPressedDispatcher
+            .addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    activity?.finish()
+                }
+            }
+            )
     }
 
     private val swipeToDeleteCallback by lazy {
@@ -131,6 +155,28 @@ class MainFragment : Fragment() {
                     .show()
             }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.settings, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            R.id.timeTableView -> {
+                Log.i("optionMenu", "Reached")
+                findNavController().navigate(R.id.action_mainFragment_to_timeTableFragment)
+                return true
+            }
+            R.id.reminderView -> {
+                Log.i("optionMenu", "Reached")
+                findNavController().navigate(R.id.action_mainFragment_to_notiMainFragment)
+                return true
+            }
+            else -> {super.onOptionsItemSelected(item)}
+        }
+
     }
     private fun doNotDisturbPermissionCheck(): Boolean {
         return Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !notificationManager.isNotificationPolicyAccessGranted
@@ -178,14 +224,11 @@ class MainFragment : Fragment() {
     }
 
     private fun blink() {
-        val handler = Handler()
-        Thread {
-            try {
-                Thread.sleep(1000)
-            } catch (e: InterruptedException) {
-                e.printStackTrace()
-            }
-            handler.post {
+
+        GlobalScope.launch {
+            delay(1000)
+            GlobalScope.launch(Dispatchers.Main) {
+                //Action on UI thread
                 val hourFormat = SimpleDateFormat("HH", Locale.getDefault())
                 val minuteFormat = SimpleDateFormat("mm", Locale.getDefault())
                 val secondFormat = SimpleDateFormat("ss", Locale.getDefault())
@@ -204,7 +247,34 @@ class MainFragment : Fragment() {
                 ))
                 blink()
             }
-        }.start()
+        }
+//
+//        Thread {
+//            try {
+//                Thread.sleep(1000)
+//            } catch (e: InterruptedException) {
+//                e.printStackTrace()
+//            }
+//            handler.post {
+//                val hourFormat = SimpleDateFormat("HH", Locale.getDefault())
+//                val minuteFormat = SimpleDateFormat("mm", Locale.getDefault())
+//                val secondFormat = SimpleDateFormat("ss", Locale.getDefault())
+//                var hour = hourFormat.format(Date())
+//                var minute = minuteFormat.format(Date())
+//                var second = secondFormat.format(Date()).toString()
+//                if(second =="00") binding.MinView.startAnimation(AnimationUtils.loadAnimation(activity,
+//                    R.anim.flip_point_from_middle
+//                ))
+//                binding.HourView.text = hour
+//                binding.MinView.text = minute
+//                binding.SecView.text = second
+//                if(hour> 12.toString()) binding.AmPmView.text = "PM"
+//                binding.SecView.startAnimation(AnimationUtils.loadAnimation(activity,
+//                    R.anim.flip_point_from_middle
+//                ))
+//                blink()
+//            }
+//        }.start()
     }
 
 }

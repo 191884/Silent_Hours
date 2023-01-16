@@ -8,15 +8,20 @@
         android:title=""
         app:showAsAction="ifRoom">
         <menu>
+<!--            <item-->
+<!--                android:id="@+id/action_settings"-->
+<!--                android:title="Settings"-->
+<!--                android:icon="@drawable/settings_icons"-->
+<!--                app:showAsAction="never"/>-->
             <item
-                android:id="@+id/action_settings"
-                android:title="Settings"
-                android:icon="@drawable/settings_icons"
+                android:id="@+id/reminderView"
+                android:title="Reminder"
+                android:icon="@drawable/delete_icon"
                 app:showAsAction="never"/>
             <item
-                android:id="@+id/action_delete"
-                android:title="Delete All"
-                android:icon="@drawable/delete_icon"
+                android:id="@+id/timeTableView"
+                android:title="Time Table View"
+                android:icon="@drawable/timetable"
                 app:showAsAction="never"/>
         </menu>
     </item>
