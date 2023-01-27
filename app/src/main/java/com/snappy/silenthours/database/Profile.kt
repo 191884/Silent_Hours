@@ -5,9 +5,6 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
-//@Entity(tableName = "profile_table")
-//data class Profile(@PrimaryKey @ColumnInfo(name = "ProfileName") val name: String)
-//data class Profile(@PrimaryKey(autoGenerate = true) val name: String)
 @Parcelize
 @Entity(tableName = "profile_table")
 data class Profile(

@@ -240,11 +240,7 @@ class MainFragment : Fragment() {
                 ))
                 binding.HourView.text = hour
                 binding.MinView.text = minute
-                binding.SecView.text = second
                 if(hour> 12.toString()) binding.AmPmView.text = "PM"
-                binding.SecView.startAnimation(AnimationUtils.loadAnimation(activity,
-                    R.anim.flip_point_from_middle
-                ))
                 blink()
             }
         }

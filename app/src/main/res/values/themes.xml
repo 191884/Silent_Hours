@@ -1,18 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SilentHours" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/statusBar</item>
-        <!-- Customize your theme here. -->
-        <item name="colorShadowLight">#8a795d</item>
-        <item name="colorShadowDark"> #bfafb2</item>
+    <style name="Base.Theme.SilentHours" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+
+    <style name="Theme.SilentHours" parent="Base.Theme.SilentHours" />
+
 </resources>

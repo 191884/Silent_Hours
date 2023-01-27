@@ -1,246 +1,270 @@
 [
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_activity_main.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/activity_main.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/anim_flip_point_to_middle.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/anim/flip_point_to_middle.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable-v24_ic_notifications_off.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable-v24/ic_notifications_off.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_trail.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/trail.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_vibration_img.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/vibration_img.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_fragment_main.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/fragment_main.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_round_app_icon.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/round_app_icon.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/xml_data_extraction_rules.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/xml/data_extraction_rules.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_clock.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/clock.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/navigation_nav_graph.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/navigation/nav_graph.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable-v24_ic_repeat.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable-v24/ic_repeat.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_blueorange_gradient.jpg.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/blueorange_gradient.jpg"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_blueorange_gradient.jpg.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/blueorange_gradient.jpg"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_timetable.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/timetable.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_time_instance.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/time_instance.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_note.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/note.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_noti_item_row.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/noti_item_row.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_noti_item_row.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/noti_item_row.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_demo.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/demo.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_persistent_bottom_sheet.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/persistent_bottom_sheet.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_trail.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/trail.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/anim_flip_point_to_middle.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/anim/flip_point_to_middle.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable-v24_mute.png.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable-v24/mute.png"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/navigation_nav_graph.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/navigation/nav_graph.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_lightblue_gradient.jpg.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/lightblue_gradient.jpg"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_persistent_bottom_sheet.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/persistent_bottom_sheet.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/menu_settings.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/menu/settings.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_ampm.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/ampm.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/anim_flip_point_from_middle.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/anim/flip_point_from_middle.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_muted_img.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/muted_img.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_fragment_reminder.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/fragment_reminder.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_settings_icons.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/settings_icons.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_round_app_icon.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/round_app_icon.xml"
     },
     {
-        "merged": "com.snappy.silenthours.app-merged_res-60:/layout_item_row.xml.flat",
-        "source": "com.snappy.silenthours.app-main-62:/layout/item_row.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_avd_bin_open_close_black_24dp.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/avd_bin_open_close_black_24dp.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/anim_flip_point_from_middle.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/anim/flip_point_from_middle.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_vibration_img.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/vibration_img.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/xml_data_extraction_rules.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_fragment_details.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_details.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_limeade.png.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/limeade.png"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_lightblue_gradient.jpg.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/lightblue_gradient.jpg"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_chip.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/chip.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_fragment_time_table.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_time_table.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_fragment_new_profile.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/fragment_new_profile.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_timetable.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/timetable.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/anim_slide_up.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/anim/slide_up.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable-v24_ic_arrow_back.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable-v24/ic_arrow_back.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_app_icon.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/app_icon.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/font_sonsie_one.ttf.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/font/sonsie_one.ttf"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_custom_dialog.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/custom_dialog.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/xml_backup_rules.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/xml/backup_rules.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_ic_add.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/ic_add.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_ic_launcher_background.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/ic_launcher_background.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/menu_settings.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/menu/settings.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_delete_icon.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/delete_icon.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/xml_backup_rules.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/xml/backup_rules.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_fragment_noti_main.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_noti_main.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_fragment_silent_hours.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/fragment_silent_hours.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_rectangle_1.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/rectangle_1.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_delete_icon.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/delete_icon.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_chip.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/chip.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_red_gadient.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/red_gadient.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_item_row.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/item_row.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_fragment_notifier.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/fragment_notifier.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_fragment_noti_main.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/fragment_noti_main.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_bg_tab_back.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/bg_tab_back.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_note.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/note.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_rectangle_1.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/rectangle_1.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_app_icon.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/app_icon.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-anydpi-v33/ic_launcher.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_ic_repeat.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/ic_repeat.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable-v24_avd_bin_open_close_black_24dp.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable-v24/avd_bin_open_close_black_24dp.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_limeade.png.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/limeade.png"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_vibration.png.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/vibration.png"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_fragment_new_profile.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_new_profile.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_red_gradient.jpg.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/red_gradient.jpg"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_blue_gradient.jpg.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/blue_gradient.jpg"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable-v24_vibration.png.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable-v24/vibration.png"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/ic_arrow_back.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable-v24_ic_add.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable-v24/ic_add.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_fragment_reminder.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_reminder.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_time_instance.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/time_instance.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_custom_dialog.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/custom_dialog.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_fragment_time_table.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/fragment_time_table.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_menu_icon.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/menu_icon.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/anim_slide_up.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/anim/slide_up.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/font_sonsie_one.ttf.flat",
+        "source": "com.snappy.silenthours.app-main-58:/font/sonsie_one.ttf"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_velvet_gradient.jpg.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/velvet_gradient.jpg"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_muted_img.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/muted_img.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_menu_icon.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/menu_icon.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_blue_gradient.jpg.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/blue_gradient.jpg"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/layout_fragment_main.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/layout/fragment_main.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_fragment_details.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/fragment_details.xml"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_clock.xml.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/clock.xml"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_velvet_gradient.jpg.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/velvet_gradient.jpg"
     },
     {
-        "merged": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-merged_res-60:/drawable_red_gradient.jpg.flat",
-        "source": "/home/aman/.gradle/daemon/7.4/com.snappy.silenthours.app-main-62:/drawable/red_gradient.jpg"
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_mute.png.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/mute.png"
+    },
+    {
+        "merged": "com.snappy.silenthours.app-merged_res-56:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.snappy.silenthours.app-main-58:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_activity_main.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.snappy.silenthours.app-merged_res-56:/layout_item_row.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/layout/item_row.xml"
+    },
+    {
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_ic_notifications_off.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/ic_notifications_off.xml"
+    },
+    {
+        "merged": "com.snappy.silenthours.app-merged_res-56:/drawable_settings_icons.xml.flat",
+        "source": "com.snappy.silenthours.app-main-58:/drawable/settings_icons.xml"
     }
 ]
